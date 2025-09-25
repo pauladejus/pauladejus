@@ -3,24 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Page</title>
-  <link rel="stylesheet" href="style.css">
+  <title>My Art Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin-top: 50px;
+      color: #333;
+    }
+    .gallery {
+      margin-top: 50px;
+    }
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My GitHub Page 🚀</h1>
-    <p>This is a simple site hosted with GitHub Pages.</p>
-  </header>
-
-  <main>
-    <button id="clickMe">Click Me!</button>
-    <p id="message"></p>
-  </main>
-
-  <footer>
-    <p>© 2025 My GitHub Page</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <h1>Welcome to My Art Gallery</h1>
+  <div class="gallery">
+    <a href="artpage.html">
+      <img src="art1.jpg" alt="Art 1">
+    </a>
+  </div>
 </body>
 </html>
